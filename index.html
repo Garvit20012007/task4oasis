@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container flex jc-center">
+        <div class="calculator theme--light flex ai-center jc-center">
+          <div id="themeBtn" class="button--theme-change flex ai-center"><span class="flex ai-center jc-center">
+              <ion-icon name="sunny-sharp"></ion-icon>
+            </span></div>
+          <section class="display flex ai-center"></section>
+          <section id="buttons" class="flex">
+            <section id="numbersBtnCont" class="flex jc-space-beetwen">
+              <button class="numberBtn usefulBtn">1</button>
+              <button class="numberBtn usefulBtn">2</button>
+              <button class="numberBtn usefulBtn">3</button>
+              <button class="numberBtn usefulBtn">4</button>
+              <button class="numberBtn usefulBtn">5</button>
+              <button class="numberBtn usefulBtn">6</button>
+              <button class="numberBtn usefulBtn">7</button>
+              <button class="numberBtn usefulBtn">8</button>
+              <button class="numberBtn usefulBtn">9</button>
+              <button id="decimalBtn" class="numberBtn usefulBtn">.</button>
+              <button id="zeroBtn" class="numberBtn usefulBtn">0</button>
+            </section>
+            <section class="flex" id="operationBtnCont">
+              <button class="operationBtn usefulBtn">+</button>
+              <button class="operationBtn usefulBtn">-</button>
+              <button class="operationBtn usefulBtn">*</button>
+              <button class="operationBtn usefulBtn">/</button>
+            </section>
+          </section>
+          <section class="flex ai-center jc-space-beetwen" id="functionBtnCont">
+            <button class="functionBtn" id="resetBtn">AC</button>
+            <button class="functionBtn" id="equalityBtn">=</button>
+          </section>
+        </div>
+      </main>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script src="./script.js"></script>
+</body>
+</html>

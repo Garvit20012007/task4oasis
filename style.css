@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&family=Titillium+Web&display=swap");
+
+:root {
+  --orange: #ffd24c;
+  --bg-btn--blue-light: #92b4ec;
+  --gray--light: #f6f8fa;
+  --gray--dark: #a9a9a9;
+  --blue-darkest: #3a85aa;
+  --blue-dark: #7077a1;
+}
+
+.container {
+  background-color: var(--blue-darkest);
+  height: 100vh;
+  width: 100%;
+}
+
+button {
+  border: unset;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-space-beetwen {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.calculator {
+  background-color: var(--gray--light);
+  width: 420px;
+  height: 680px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  flex-direction: column;
+  gap: 40px;
+  transition: all 500ms;
+}
+
+.button--theme-change {
+  width: 80px;
+  height: 40px;
+  align-self: flex-end;
+  position: relative;
+  right: 22px;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+}
+
+.button--theme-change > span {
+  color: var(--blue-darkest);
+  background-color: var(--bg-btn--blue-light);
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  transition: all 500ms;
+}
+
+.darkMode {
+  transform: translate(41px);
+}
+
+.display {
+  border: 1px solid #ccc;
+  width: 85%;
+  height: 115px;
+  padding-right: 19px;
+  border-radius: 8px;
+  font-family: "Play", sans-serif;
+  flex-direction: row-reverse;
+  font-size: 48px;
+  transition: all 500ms;
+  color: var(--gray--dark);
+  background-color: #fff;
+}
+
+#buttons {
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+#numbersBtnCont {
+  width: 75%;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#decimalBtn,
+#zeroBtn {
+  flex-grow: 1;
+  align-items: center;
+}
+
+#operationBtnCont {
+  width: 25%;
+  gap: 15px;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#functionBtnCont {
+  width: 90%;
+  gap: 15px;
+}
+
+.numberBtn {
+  color: var(--blue-darkest);
+  border: 1px solid var(--gray--dark);
+}
+
+.operationBtn {
+  background-color: var(--bg-btn--blue-light);
+}
+
+.functionBtn {
+  flex-grow: 1;
+  background-color: var(--orange);
+}
+
+.theme-light {
+  background-color: var(--gray--light);
+  box-shadow: none;
+}
+
+.theme--dark {
+  background-color: var(--blue-darkest);
+  box-shadow: 0 0 10px var(--gray--dark);
+}
+
+.display--dark {
+  background-color: var(--blue-dark);
+  border-color: var(--blue-darkest);
+}
+
+.container--dark {
+  background-color: var(--gray--light);
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+.active {
+  scale: 1.1;
+}
